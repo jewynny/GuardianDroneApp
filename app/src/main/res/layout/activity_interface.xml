@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- HEADER BAR -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/titleTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.12"
+            android:text="GUARDIAN"
+            android:textColor="#000000"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.12"
+            android:text="DRONE"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- =============== DRONE FEED 1 =============== -->
+    <LinearLayout
+        android:id="@+id/droneCard1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="#111111"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- IMAGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/droneImage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample_drone_view1" />
+
+            <!-- Status overlay -->
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status - SAFE\nSCANNING"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="#66000000"
+                android:padding="6dp"
+                android:layout_margin="10dp" />
+        </FrameLayout>
+
+        <!-- ICON ROW -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_battery" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_signal" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_shield" />
+        </LinearLayout>
+
+        <!-- LABEL + BUTTON -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/droneLabel1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Drone 1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/viewStatus1"
+                android:layout_width="145dp"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_light"
+                android:text="View Status Report"
+                android:textSize="11sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- =============== DRONE FEED 2 =============== -->
+    <LinearLayout
+        android:id="@+id/droneCard2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="#111111"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/droneCard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- IMAGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/droneImage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample_drone_view2" />
+
+            <!-- Status overlay -->
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status - SAFE\nCHARGING"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="#66000000"
+                android:padding="6dp"
+                android:layout_margin="10dp" />
+        </FrameLayout>
+
+        <!-- ICON ROW -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_battery" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_signal" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_shield" />
+        </LinearLayout>
+
+        <!-- LABEL + BUTTON -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/droneLabel2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Drone 2"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/viewStatus2"
+                android:layout_width="145dp"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_light"
+                android:text="View Status Report"
+                android:textSize="11sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navLogs"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_logs" />
+
+        <Space android:layout_width="40dp" android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/navDrones"
+            android:layout_width="72dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_drone" />
+
+        <Space android:layout_width="40dp" android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/navMenu"
+            android:layout_width="72dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_menu" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
