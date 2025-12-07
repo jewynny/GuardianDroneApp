@@ -285,10 +285,25 @@
                     android:textColor="#FFFFFF"
                     android:textSize="22sp" />
             </LinearLayout>
-
-
         </LinearLayout>
     </ScrollView>
+
+    <!-- ================= LOGOUT BUTTON ================= -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="LOG OUT"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:backgroundTint="#FF4444"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
     <!-- ================= BOTTOM NAV BAR ================= -->
     <LinearLayout

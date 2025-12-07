@@ -3,6 +3,7 @@ package com.example.guardiandrone
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -37,6 +38,10 @@ class SettingsActivity : AppCompatActivity() {
 //        findViewById<View>(R.id.rowAbout)
 //            .findViewById<TextView>(R.id.).text = "About"
 
+        val logoutBtn = findViewById<Button>(R.id.btnLogout)
+        logoutBtn.setOnClickListener {
+            startActivity(Intent(this, LandingActivity::class.java))
+        }
 
         val logsBtn = findViewById<ImageView>(R.id.navLogs)
         logsBtn.setOnClickListener {
