@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:text="Good Evening, we have your health report"
                 android:textColor="#FFFFFF"
-                android:textSize="32sp"
+                android:textSize="22sp"
                 android:textStyle="italic"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"/>
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:text="Drone 1 Status Report"
                 android:textColor="#FFFFFF"
-                android:textSize="36sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:paddingTop="24dp"
                 android:paddingBottom="12dp"/>
@@ -96,41 +96,32 @@
                 android:gravity="center_vertical">
 
                 <TextView
-                    android:id="@+id/droneBattery"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="6dp"
                     android:text="100%"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+                    android:textSize="14sp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
 
                 <ImageView
                     android:src="@drawable/ic_battery"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"/>
+                    android:layout_marginEnd="10dp"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"
                     android:text="strong connection"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+                    android:textSize="14sp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
 
                 <ImageView
                     android:src="@drawable/ic_signal"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"
-                    android:text="shielded"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+                    android:layout_marginEnd="10dp"/>
 
                 <ImageView
                     android:src="@drawable/ic_shield"
@@ -142,7 +133,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Current Status: ACTIVITY DETECTED\nCurrent Activity: SCANNING\nScanning Start: 8PM"
+                android:text="Current Status: ACTIVITY DETECTED\nCurrent Activity: SCANNING"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:paddingTop="14dp"
@@ -165,97 +156,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:paddingTop="6dp"/>
-
-            <TextView
-                android:id="@+id/droneReportTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Drone 2 Status Report"
-                android:textColor="#FFFFFF"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:paddingTop="24dp"
-                android:paddingBottom="12dp"/>
-
-            <!-- Icon Row -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:id="@+id/droneBattery"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="6dp"
-                    android:text="100%"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:src="@drawable/ic_battery"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"
-                    android:text="strong connection"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:src="@drawable/ic_signal"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="6dp"
-                    android:text="shielded"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:src="@drawable/ic_shield"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"/>
-            </LinearLayout>
-
-            <!-- Status Info -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Current Status: SAFE\nCurrent Activity: SCANNING\nScanning Start: 8PM"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:paddingTop="14dp"
-                android:paddingBottom="14dp"/>
-
-            <!-- Activities Title -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activities Detected:"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-
-            <!-- Activity Logs -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="None Detected"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:paddingTop="6dp"/>
         </LinearLayout>
-
     </ScrollView>
 
 
