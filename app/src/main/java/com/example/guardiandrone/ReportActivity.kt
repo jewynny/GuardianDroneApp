@@ -22,6 +22,15 @@ class ReportActivity : AppCompatActivity() {
         droneBtn.setOnClickListener {
             val intent = Intent(this, InterfaceActivity::class.java)
             startActivity(intent)
+            finish()
+        }
+
+        // Settings
+        val settingsBtn = findViewById<ImageView>(R.id.navMenu)
+        settingsBtn.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

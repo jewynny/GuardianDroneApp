@@ -2,6 +2,7 @@ package com.example.guardiandrone
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.guardiandrone.R
@@ -17,8 +18,8 @@ class InterfaceActivity : AppCompatActivity() {
         // Checklist → ReportActivity
         val logsButton = findViewById<ImageView>(R.id.navLogs)
         logsButton.setOnClickListener {
-            val intent = Intent(this, ReportActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, ReportActivity::class.java))
+            finish()
         }
 
         // Drone icon (current page)
@@ -28,11 +29,27 @@ class InterfaceActivity : AppCompatActivity() {
         }
 
 //        // Menu
-//        val menuButton = findViewById<ImageView>(R.id.navMenu)
-//        menuButton.setOnClickListener {
-//            val intent = Intent(this, LandingActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        val menuButton = findViewById<ImageView>(R.id.navMenu)
+        menuButton.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // View status button 1
+        val viewStatusButton1 = findViewById<Button>(R.id.viewStatus1)
+        viewStatusButton1.setOnClickListener {
+            val intent = Intent(this, ReportActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // View status button 2
+        val viewStatusButton2 = findViewById<Button>(R.id.viewStatus2)
+        viewStatusButton2.setOnClickListener {
+            val intent = Intent(this, ReportActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
