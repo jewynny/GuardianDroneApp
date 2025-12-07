@@ -1,22 +1,28 @@
 package com.example.guardiandrone
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Find the back button by its ID
+        // Back arrow → LandingActivity
         val backButton = findViewById<ImageView>(R.id.backArrow)
-
-        // Set click listener
         backButton.setOnClickListener {
-            // Go back to LandingActivity
             val intent = Intent(this, LandingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // Register button → InterfaceActivity
+        val registerButton = findViewById<Button>(R.id.btnRegister)
+        registerButton.setOnClickListener {
+            val intent = Intent(this, InterfaceActivity::class.java)
             startActivity(intent)
             finish()
         }

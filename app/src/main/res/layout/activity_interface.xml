@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:orientation="vertical"
-        android:background="#111111"
+        android:background="@drawable/rounded_feed_background"
         android:padding="10dp"
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/sample_drone_view1" />
 
-            <!-- Status overlay -->
             <TextView
                 android:id="@+id/status1"
                 android:layout_width="wrap_content"
@@ -76,7 +75,8 @@
                 android:textSize="12sp"
                 android:background="#66000000"
                 android:padding="6dp"
-                android:layout_margin="10dp" />
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
         </FrameLayout>
 
         <!-- ICON ROW -->
@@ -142,7 +142,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
-        android:background="#111111"
+        android:background="@drawable/rounded_feed_background"
         android:padding="10dp"
         app:layout_constraintTop_toBottomOf="@id/droneCard1"
         app:layout_constraintStart_toStartOf="parent"
